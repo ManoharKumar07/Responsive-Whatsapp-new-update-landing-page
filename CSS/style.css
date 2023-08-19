@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lobster&family=Oswald:wght@300&display=swap');
+/* 
+font-family: 'Caprasimo', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Oswald', sans-serif; */
+
+body{
+   background-color: #E1FFD7;
+    max-width: 900px;
+    padding: 0;
+    line-height: 1.45;
+    margin: 0 auto;
+}
+.bod{
+    padding-top: 1px; 
+    padding-bottom: 1px; 
+   
+}
+.container{
+    padding: 40px 40px;
+    text-align: center;
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    background-color: rgba(17, 134, 218, 0.742);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: blue;
+}
+
+header{
+    background-color: #00A884;
+    padding: 10px;
+    font-family:  cursive;
+    font-size: large;
+    
+}
+
+.features{
+    background-color: #41D777;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    
+}
+.feature{
+    width: 32%;
+    display:inline-block;
+    vertical-align: top;
+}
+.feature img {
+    width: 40%; 
+}
+
+.quote{
+    background-color: #d7e7d886;
+}
+blockquote{
+    text-align:right;
+    font-size: medium;
+    font-family: 'Caprasimo', cursive;
+    color:black ;
+}
+blockquote cite {
+    font-size: small;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+}
+footer ul{
+    list-style: none;
+}
+footer li a{
+    text-decoration: none;
+    color: white;
+
+}
+footer li a:hover{
+    color: #41D777;
+}
+footer li a::after{
+    color: rgb(217, 78, 22);
+}
+footer li{
+    display: inline-block;
+    padding:0 25px;
+}
+footer p{
+    padding: 1px auto;
+}
