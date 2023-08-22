@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lobster&family=Oswald:wght@300&display=swap');
-/* 
-font-family: 'Caprasimo', cursive;
-font-family: 'Lobster', cursive;
-font-family: 'Oswald', sans-serif; */
 
-body{
-   background-color: #E1FFD7;
+/* body */
+body {
+    background-color: #E1FFD7;
     max-width: 900px;
     padding: 0;
     line-height: 1.45;
     margin: 0 auto;
 }
-.bod{
-    padding-top: 1px; 
-    padding-bottom: 1px; 
-   
+
+.bod {
+    padding-top: 1px;
+    padding-bottom: 1px;
+
 }
-.container{
+
+.container {
     padding: 40px 40px;
     text-align: center;
 }
 
-.btn{
+/* Header Section */
+.btn {
     text-decoration: none;
     display: inline-block;
     color: white;
@@ -30,69 +30,121 @@ body{
     border-radius: 8px;
     cursor: pointer;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: blue;
 }
 
-header{
+header {
     background-color: #00A884;
     padding: 10px;
-    font-family:  cursive;
+    font-family: cursive;
     font-size: large;
-    
+
 }
 
-.features{
+/* Feature Section*/
+.features {
     background-color: #41D777;
     color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 13px;
-    
-}
-.feature{
-    width: 32%;
-    display:inline-block;
-    vertical-align: top;
-}
-.feature img {
-    width: 40%; 
+
 }
 
-.quote{
+.feature {
+    width: 32%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.feature img {
+    width: 40%;
+}
+
+/* Quote Section */
+.quote {
     background-color: #d7e7d886;
 }
-blockquote{
-    text-align:right;
+
+blockquote {
+    text-align: right;
     font-size: medium;
     font-family: 'Caprasimo', cursive;
-    color:black ;
+    color: black;
 }
+
 blockquote cite {
     font-size: small;
 }
 
-footer{
+/* Footer Section */
+footer {
     background-color: rgba(0, 0, 0, 0.733);
     color: white;
 }
-footer ul{
+
+footer ul {
     list-style: none;
 }
-footer li a{
+
+footer li a {
     text-decoration: none;
     color: white;
 
 }
-footer li a:hover{
+
+footer li a:hover {
     color: #41D777;
 }
-footer li a::after{
+
+footer li a::after {
     color: rgb(217, 78, 22);
 }
-footer li{
+
+footer li {
     display: inline-block;
-    padding:0 25px;
+    padding: 0 25px 30px 25px;
+
+    width: 100px;
+    margin: 0 auto;
 }
-footer p{
+
+footer p {
     padding: 1px auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive */
+@media screen and (max-width :480px){
+/* Responsive header */
+    .btn{
+        display: block;
+        font-size: 18px;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    h1{
+        font-size: 32px;
+    }
+
+    /* Responsive Features */
+    .features{
+        justify-content: center;
+        padding-left: 40px;
+    }
+    .feature{
+        display:flex;
+        width: 100%;
+        text-align: left;
+        align-items: center;
+    }
+
+    /* Quote Section */
+    blockquote{
+        text-align: center;
+        
+    }
+    
+
 }
