@@ -42,10 +42,28 @@ header {
     font-size: large;
 
 }
-.submenu a{
-    text-decoration: none;
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0px);
 }
 
+.submenu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 1px auto;
+    background-color: rgb(10, 188, 248);
+    padding: 10px 10px;
+    width: 110px;
+    border-radius: 5px;
+
+}
+.submenu a:hover{
+    background-color: #41D777;
+}
 
 
 
@@ -120,7 +138,7 @@ footer p {
     padding: 1px auto;
     display: block;
     width: 150px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 /* Responsive */
@@ -129,6 +147,7 @@ footer p {
     /* Responsive header */
     .btn {
         display: block;
+        width: 93%;
         font-size: 18px;
         background-color: rgba(0, 0, 0, 0.8);
     }
@@ -136,15 +155,19 @@ footer p {
     h1 {
         font-size: 32px;
     }
+
     .submenu {
-        display: block;
-        width: 100%;
         position: relative;
-        box-sizing: border-box;
+
     }
-    .submenu a{
-        width: 200px;/
-        border: 2px solid red;
+
+    .submenu a {
+        display: block;
+        width: 93%;
+    }
+
+    .submenu a:hover {
+        background-color: #41D777;
     }
 
     /* Responsive Features */
@@ -159,7 +182,7 @@ footer p {
         text-align: left;
         align-items: center;
     }
-
+   
     /* Quote Section */
     blockquote {
         text-align: center;
